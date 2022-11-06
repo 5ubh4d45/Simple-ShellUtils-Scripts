@@ -100,7 +100,7 @@ function BackupandCommit {
         $commitMessage
     )
     Backup
-    git init
+    # git init
     git add *
     if ($commitMessage) {
         <# Action to perform if the condition is true #>
