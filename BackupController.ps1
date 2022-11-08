@@ -2,17 +2,18 @@
 # / ___)(  )( \/ )(  _ \(  )  (  __)  (  _ \ / _\  / __)(  / )/ )( \(  _ \
 # \___ \ )( / \/ \ ) __// (_/\ ) _)    ) _ (/    \( (__  )  ( ) \/ ( ) __/
 # (____/(__)\_)(_/(__)  \____/(____)  (____/\_/\_/ \___)(__\_)\____/(__)  
-#                                                   by ixale https://github.com/5ubh4d45
-
-# - to run the script on PowerShell, use ". <path to the script>\BackupController.ps1; <Command of Your Choice>"
+#                                                   by ixale  | Repo: https://github.com/5ubh4d45/Simple-ShellUtils-Scripts
+# - 
+# -
+# - to run the script Directly on PowerShell, use ". <path to the script>\BackupController.ps1; <Command of Your Choice>"
 # - Current Choices [Backup, Restore, BackupAndCommit(WIP)]
 # - example1 in Ps > . .\BackupController.ps1; Backup 
 # - example2 in Ps > . $HOME\Desktop\BackupController.ps1; Restore 
 # - HERE "." and "HOME\Desktop\" are the path to the script.
-
+# - You can also refer these commands into different scripts () and call them separetly (ex: ).
+# - ex: creating a Backup.ps1 and adding the command in that script ". .\BackupController.ps1; Backup" and calling that script instead.
 #----------------------------------------------------------------------------------------------------------------------#
 
-# Backup script for settings of my terminals
 
 # declaring paths for sources
 $sourcePowerShellPath = "$HOME\Documents\PowerShell"                                # change your powershell path
@@ -69,9 +70,9 @@ function copyItems {
 # TODO: adding git full integration
 
 # test
-# function Test {
-#     Write-Host Successfull.
-# }
+function Test {
+    Write-Host Successfull.
+}
 
 # backing up
 function Backup {        
